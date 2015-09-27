@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/ColorPrimaryDark">
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="Image Size"
+        android:id="@+id/tvSizeLabel" />
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spSize"
+        android:layout_alignParentRight="true" />
+    <TextView
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image Color"
+        android:layout_below="@id/tvSizeLabel"
+        android:id="@+id/tvColorLabel" />
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spColor"
+        android:layout_below="@id/spSize"
+        android:layout_alignParentRight="true" />
+    <TextView
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image Type"
+        android:layout_below="@id/tvColorLabel"
+        android:id="@+id/tvTypeLabel" />
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spType"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/spColor"/>
+
+    <EditText
+        android:layout_marginTop="8dp"
+        android:id="@+id/etSite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTypeLabel"
+        android:layout_gravity="center_horizontal"
+        android:hint="site" />
+
+</RelativeLayout>

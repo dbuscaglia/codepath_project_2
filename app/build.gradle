@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "danbuscaglia.googleimagesearch"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+}
+dependencies {
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.makeramen:roundedimageview:2.2.0'
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.etsy.android.grid:library:1.0.5'
+    compile('com.afollestad.material-dialogs:core:0.8.1.0@aar') {
+        transitive = true
+    }
+    compile('com.afollestad.material-dialogs:commons:0.8.1.0@aar') {
+        transitive = true
+    }
+}
